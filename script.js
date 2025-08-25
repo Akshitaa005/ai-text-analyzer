@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeModalBtn = document.getElementById('close-modal-btn');
 
     // IMPORTANT: Replace this placeholder with your actual n8n webhook URL
-    const webhookUrl = 'https://five-candles-argue.loca.lt';
+    const webhookUrl = 'http://localhost:5678/webhook/ed8edf39-4d90-4cb8-ac71-aa115950abec';
 
     // Handle sidebar toggle functionality
     openSidebarBtn.addEventListener('click', () => {
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        if (!webhookUrl || webhookUrl === 'https://five-candles-argue.loca.lt') {
+        if (!webhookUrl || webhookUrl === 'http://localhost:5678/webhook/ed8edf39-4d90-4cb8-ac71-aa115950abec') {
             alert('Please replace the placeholder URL with your actual n8n webhook URL.');
             return;
         }
@@ -101,4 +101,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
 
