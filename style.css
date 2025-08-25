@@ -1,54 +1,17 @@
-/* Custom font, viewport and background styles */
+
+/* Custom font and viewport styling */
 body {
     font-family: 'Inter', sans-serif;
-    transition: margin-left 0.3s ease-in-out;
 }
 
-/* Styles for the main content area, including sidebar-open state */
-.main-content {
-    transition: margin-left 0.3s ease-in-out;
-    margin-left: 0;
-}
-
-.main-content.open {
-    margin-left: 256px; /* Width of the sidebar */
-}
-
-/* Styles for the collapsible sidebar */
-.sidebar {
-    width: 256px;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
-}
-
-.sidebar.open {
-    transform: translateX(0);
-}
-
-/* Custom spinner for a more modern look */
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.animate-spin-custom {
-  animation: spin 1s linear infinite;
-}
-
-/* Hero section with a beautiful, custom gradient */
+/* Hero section with a beautiful gradient */
 .hero-background {
-    background: linear-gradient(to bottom right, #a7b7ff, #7289f3, #5a66a1);
-    min-height: 40vh; /* A bit shorter for the hero section */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem 1rem;
+    background: linear-gradient(to bottom right, #4c51bf, #667eea, #764ba2);
 }
 
 /* Main content section to overlap the hero background */
 .main-content-section {
-    margin-top: -80px; /* Pull the main content up to overlap the hero section */
+    margin-top: -80px;
     position: relative;
     z-index: 10;
 }
