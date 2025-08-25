@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        if (!webhookUrl || webhookUrl === 'YOUR_N8N_WEBHOOK_URL_HERE') {
+        if (!webhookUrl || webhookUrl === 'https://five-candles-argue.loca.lt') {
             alert('Please replace the placeholder URL with your actual n8n webhook URL.');
             return;
         }
@@ -101,3 +101,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
